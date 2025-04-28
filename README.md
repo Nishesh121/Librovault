@@ -28,6 +28,7 @@ LibroVault/
 ├── frontend/
 │   ├── index.html
 │   └── script.js
+│   └── style.css 
 └── LibroVault_Full_Documentation.pdf
 ```
 
