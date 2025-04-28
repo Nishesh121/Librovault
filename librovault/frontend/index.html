@@ -3,34 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>LibroVault</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <h1>LibroVault - Book Management</h1>
 
-<h2>Add New Book</h2>
-<form id="addBookForm">
-    <input type="text" id="title" placeholder="Title" required>
-    <input type="text" id="authorInput" placeholder="Author" required>
-    <input type="text" id="genreInput" placeholder="Genre" required>
-    <input type="number" id="price" placeholder="Price" step="0.01" required>
-    <button type="submit">Add Book</button>
-</form>
+<div class="form-container">
+    <div class="form-section">
+        <h2>Add New Book</h2>
+        <form id="addBookForm">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="authorInput" placeholder="Author" required>
+            <input type="text" id="genreInput" placeholder="Genre" required>
+            <input type="number" id="price" placeholder="Price" step="0.01" required>
+            <button type="submit">Add Book</button>
+        </form>
+    </div>
 
-<h2>Search Books</h2>
-<form id="searchForm">
-    <select id="authorSelect">
-        <option value="">Select Author</option>
-    </select>
+    <div class="form-section">
+        <h2>Search Books</h2>
+        <form id="searchForm">
+            <select id="authorSelect">
+                <option value="">Select Author</option>
+            </select>
 
-    <select id="genreSelect">
-        <option value="">Select Genre</option>
-    </select>
+            <select id="genreSelect">
+                <option value="">Select Genre</option>
+            </select>
 
-    <input type="number" id="minPrice" placeholder="Min Price" step="0.01">
-    <input type="number" id="maxPrice" placeholder="Max Price" step="0.01">
-    <button type="submit">Search</button>
-</form>
+            <input type="number" id="minPrice" placeholder="Min Price" step="0.01">
+            <input type="number" id="maxPrice" placeholder="Max Price" step="0.01">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</div>
 
 <h2>All Books</h2>
 <table border="1">
